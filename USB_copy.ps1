@@ -3,7 +3,7 @@
 #
 #
 
-#Function to hide the Powershell terminal
+#Function to hide the Powershell terminal - https://stackoverflow.com/a/46414223
 $Script:showWindowAsync = Add-Type -MemberDefinition @"
 [DllImport("user32.dll")]
 public static extern bool ShowWindowAsync(IntPtr hWnd, int nCmdShow);
